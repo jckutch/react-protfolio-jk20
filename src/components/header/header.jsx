@@ -7,7 +7,7 @@ const Header = ({currentPage, handlePage}) => {
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#About" onClick={() => handlePage('About')}>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Logo_IPN.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />John Kutch
+                    <h4>John Kutch</h4>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>

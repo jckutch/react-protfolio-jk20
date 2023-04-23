@@ -21,8 +21,9 @@ const About = () => {
             <div className="d-flex justify-content-center">
                 <img className="picture" src={picture} alt="Developer" style={styles.picture}/>
             </div>
-            <div className="d-flex justify-content-center align-items-end">
-                <h1 className="px-3">&#128074; Welcome &#128075;</h1>
+            <div className="d-flex flex-column justify-content-center align-items-center">
+                <h1 className="px-3">&#128074; ABOUT ME &#128075;</h1>
+                <h3>Welcome</h3>
             </div>
               <br/>
               <p className="text-center">
@@ -32,8 +33,8 @@ const About = () => {
               </p>
               <br />
               <p className="text-center">
-              Experienced in: Java | Javascript | Node.js | Express.js | React.js | HTML | CSS3 | GitHub | OOP | Sequelize +
-              MySQL | MongoDB | Responsive Web Design
+              Experienced in: Javascript, NodeJS, ExpressJS, React, HTML & CSS, GitHub, OOP, ORM, Sequelize +
+              MySQL, MongoDB, Responsive Web Design.
               </p>
           </div>
           <div className="col-md-4 p-5">
