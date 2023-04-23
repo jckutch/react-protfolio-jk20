@@ -1,30 +1,30 @@
 import React from "react";
-import './Header.css'
+import './header.css'
 
-const Header = () => {
+const Header = ({currentPage, handlePage}) => {
     return (
         <header className="header">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="https://github.com/aletsmc07/React-Portfolio">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Logo_IPN.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />My Portfolio
+                    <a class="navbar-brand" href="#About" onClick={() => handlePage('About')}>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/72/Logo_IPN.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />John Kutch
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav ms-auto">
-                            <a class="nav-link" href="#about">
-                            <i class="bi bi-house"></i> About
+                            <a className= {currentPage === 'About' ? 'nav-link active' : 'nav-link'} href="#About" onClick={() => handlePage('About')}>
+                                <i class="bi bi-house navlink"></i> About
                             </a>
-                            <a class="nav-link" href="#portfolio">
-                                <i class="bi bi-file-earmark-code"></i>Portfolio
+                            <a className= {currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'} href="#Portfolio" onClick={() => handlePage('Portfolio')}>
+                                <i class="bi bi-file-earmark-code navlink"></i>Portfolio
                             </a>
-                            <a class="nav-link" href="#contact">
-                                <i class="bi bi-envelope"></i>Contact
+                            <a className= {currentPage === 'Contact' ? 'nav-link active' : 'nav-link'} href="#contact" onClick={ () => handlePage('Contact')}>
+                                <i class="bi bi-envelope navlink"></i>Contact
                             </a>
-                            <a class="nav-link" href="#resume">
-                                <i class="bi bi-file-person"></i>Resume
+                            <a className= {currentPage === 'Resume' ? 'nav-link active' : 'nav-link'} href="#resume" onClick={ () => handlePage('Resume')}>
+                                <i class="bi bi-file-person navlink"></i>Resume
                             </a>
                         </div>
                     </div>
